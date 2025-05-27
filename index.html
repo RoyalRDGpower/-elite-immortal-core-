@@ -1,59 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>DOD Cyber Command Contact</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DOD | Cyber Intelligence Command Unit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
   <style>
     body {
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
+      margin: 0;
+      font-family: 'Share Tech Mono', monospace;
+      background-color: #0a0a0a;
+      color: #00ffcc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+    .seal {
+      width: 120px;
+      margin-top: 2rem;
+    }
+    h1 {
+      font-size: 2rem;
+      color: #00ffcc;
       text-align: center;
-      padding: 20px;
     }
-
-    img {
-      max-width: 200px;
-      margin-bottom: 20px;
-    }
-
-    input, textarea {
+    .terminal-box {
+      background-color: #111;
+      border: 2px solid #00ffcc;
+      padding: 2rem;
+      border-radius: 12px;
       width: 90%;
-      max-width: 400px;
-      margin-bottom: 10px;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
+      max-width: 600px;
+      box-shadow: 0 0 30px #00ffcc44;
+      margin-top: 1.5rem;
     }
-
-    button {
-      padding: 10px 20px;
-      background-color: #444;
-      color: #fff;
+    .input-group {
+      margin: 1rem 0;
+    }
+    input {
+      width: 100%;
+      padding: 0.75rem;
+      background: #000;
+      color: #00ffcc;
+      border: 1px solid #00ffcc;
+      border-radius: 6px;
+    }
+    .login-btn {
+      background: #00ffcc;
+      color: #000;
+      padding: 0.75rem 2rem;
+      font-weight: bold;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
       cursor: pointer;
+      width: 100%;
     }
-
-    .email {
-      margin-top: 20px;
-      color: #bbb;
-      font-style: italic;
+    .notice {
+      font-size: 0.85rem;
+      margin-top: 1rem;
+      color: #ff4444;
     }
   </style>
 </head>
 <body>
+  <<img src="Seal_of_the_United_States_Department_of_Defense.svg" alt="DOD Seal" width="200">
+  <h1>Department of Defense<br/>Cyber Intelligence Unit</h1>
 
-  <img src="1024px-Seal_of_the_United_States_Department_of_Defense.svg.png" alt="Department of Defense Seal">
-
-  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required><br>
-    <input type="email" name="_replyto" placeholder="Your Email" required><br>
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br>
-    <button type="submit">Send Message</button>
-  </form>
-
-  <p class="email">Official Contact: dept.defensehq@aol.com</p>
-
+  <div class="terminal-box">
+    <div class="input-group">
+      <input type="text" placeholder="Username or Access Code" />
+    </div>
+    <div class="input-group">
+      <input type="password" placeholder="Encrypted Password" />
+    </div>
+    <button class="login-btn">Initiate Command Login</button>
+    <div class="notice">Unauthorized access is strictly prohibited. Clearance required.</div>
+  </div>
 </body>
 </html>
