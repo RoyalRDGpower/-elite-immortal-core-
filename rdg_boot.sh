@@ -1,3 +1,4 @@
+
 #!/data/data/com.termux/files/usr/bin/bash
 
 # === RDGpower Supreme Boot Trigger ===
