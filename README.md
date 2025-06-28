@@ -24,7 +24,7 @@ This script is the **entry point** for all immortal-level deployments. It prepar
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/elite-immotal-core.git
+git clone https://github.com/Royalrdgpower/elite-immotal-core.git
 cd elite-immotal-core
 chmod +x immortal-start.sh
 ./immortal-start.sh
